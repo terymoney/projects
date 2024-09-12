@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module2-solution</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(212, 149, 189);
+            
+        }
+
+        h1{
+            margin-bottom: 15px;
+        }
+
+        .container {
+                   width: 100%;
+                   padding: 20px;
+        }
+
+        .food-section {
+  background-color: #f4f4f4;
+  border: 1px solid black;
+  padding: 15px;
+  position: relative;
+  margin: 10px;
+  min-height: 200px;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border: 1px solid black;
+  width: 80px;
+  height: 50px;
+}
+
+
+@media (min-width: 992px) {
+    .food-section{
+        float: left;
+        width: 30%;
+        margin-right: 3.33%;
+    }
+    .food-section:nth-child(3) {
+    margin-right: 0; /* remove margin for the last section */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-section{
+        float: left;
+        width: 48%;
+        margin-right: 4%;
+        margin-left: auto;
+
+    } 
+    .food-section:nth-child(2) {
+    margin-right: auto; /* remove margin for the second section */
+    margin-left: auto;
+    width: 48%;
+  }
+
+  .food-section:nth-child(3) {
+    width: 100%;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 767px) {
+    .food-section{
+        float: none;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Module2-solution</h1>
+
+    <div class="container">
+        <section class="food-section">
+          <div class="title">Chicken</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section class="food-section">
+          <div class="title">Beef</div>
+          <p>Nullam vehicula risus in orci vestibulum, at pulvinar erat tincidunt.</p>
+        </section>
+        <section class="food-section">
+          <div class="title">Sushi</div>
+          <p>Proin euismod leo vel justo sodales, non tincidunt erat fermentum.</p>
+        </section>
+      </div>
+
+
+</body>
+</html>
